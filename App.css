@@ -1,0 +1,146 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  animation: gradient 15s ease infinite;
+}
+
+.app {
+  max-width: 600px; /* Limit the width for larger screens */
+  margin: 30px auto; /* Center the app */
+  padding: 20px; /* Consistent padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  background-color: rgba(255, 255, 255, 0.9); /* Light background */
+}
+
+/* Light and Dark mode */
+.light {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.dark {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #f0f0f0;
+}
+
+/* Center username input */
+.username-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  margin-bottom: 20px; /* Space below */
+}
+
+/* Center hello user message */
+.hello-user {
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Space below */
+}
+
+/* Task input styles */
+.task-input {
+  margin: 20px 0; /* Space above and below */
+  display: flex;
+  flex-direction: column; /* Arrange elements in a column */
+  align-items: center; /* Center elements horizontally */
+  gap: 10px; /* Space between elements */
+}
+
+.task-input input,
+.task-input select,
+.task-input button {
+  width: 100%; /* Use full width */
+  max-width: 250px; /* Limit width for better design */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.task-input input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Search input styles */
+input[type="text"] {
+  width: 100%; /* Full width */
+  max-width: 250px; /* Limit width for better design */
+  padding: 10px;
+  margin: 0 auto 20px; /* Center with auto margins, space below */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  display: block; /* Ensure it acts like a block element */
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Arrange buttons in a column */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Task list styles */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+  margin: 10px 0; /* Space between list items */
+  padding: 15px;
+  border-radius: 10px; /* Increased border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li:hover {
+  transform: translateY(-3px); /* Less dramatic hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+}
+
+/* Button styles */
+button {
+  padding: 10px 15px; /* Increased padding for buttons */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px; /* Space above the button */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Progress bar styles */
+.progress-bar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin: 20px 0; /* Space above and below */
+}
+
+.progress-bar label {
+  margin-right: 10px; /* Space between label and progress bar */
+}
+
+.progress-bar progress {
+  flex: 1; /* Allow progress bar to grow */
+  margin-right: 10px; /* Space between progress bar and percentage */
+}
+
